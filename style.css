@@ -580,6 +580,15 @@ footer {
         text-align: center;
     }
 
+    .presentation-title-name {
+        display:block;
+    }
+
+    .presentation-links {
+        width: 0px;
+        display: none;
+    }
+
     .presentation-stylebox:nth-child(2) {
         width: 0px;
         visibility: hidden;
