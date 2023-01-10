@@ -447,7 +447,8 @@ body {
 }
 
 .card-projects .card-projects-content .project .project-card video {
-    height: 200px;
+    transform: translate(-22px, -25px);
+    height: 250px;
 }
 
 .card-projects .card-projects-content .project .project-content {
