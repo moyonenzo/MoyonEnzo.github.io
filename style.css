@@ -610,6 +610,7 @@ footer {
     }
 
     .presentation {
+        margin-top: 30em;
         padding: 5em 20px;
         text-align: center;
     }
@@ -651,6 +652,8 @@ footer {
         padding: 0 150px;
         align-items: center;
         justify-content: center;
+
+        margin-top: 50em;
     
         display: flex;
         flex-direction: column;
