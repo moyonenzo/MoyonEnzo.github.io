@@ -128,9 +128,21 @@ body {
 }
 
 .stylebox ul {
+    position: fixed;
+
     display: flex;
     flex-direction: row-reverse;
     padding-right: 50px;
+
+    height: 40px;
+
+    background: var(--card-background);
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 0px solid rgba(17, 17, 17, 1.0);
+
+    transform: translateX(-25px) translateY(-10px);
 }
 
 .stylebox ul {
@@ -150,11 +162,12 @@ body {
     text-align: center;
 
     transition: .5s ease-in-out;
+    transform: translateX(24px) translateY(6px);
 }
 
 .stylebox ul li:hover {
-    transform: translateY(-2px);
     text-decoration: underline;
+    transform: translateX(24px) translateY(4px);
 } 
 
 .stylebox ul li a {
@@ -179,7 +192,7 @@ body {
     width: 100%;
 }
 
-.presentation-stylebox:nth-child(1) a {
+.presentation-stylebox:nth-child(1) span {
     color: var(--font-color);
     opacity: .8;
 }
@@ -448,6 +461,11 @@ body {
     height: 250px;
 }
 
+.card-projects .card-projects-content .project:nth-child(1) .project-content .titlebar a {
+    opacity: .1;
+    cursor: default;
+}
+
 .card-projects .card-projects-content .project .project-card {
     width: 240px;
     height: 200px;
@@ -566,6 +584,10 @@ footer {
         position: relative;
     }
 
+    .container:nth-child(1) {
+        height: 1170px;
+    }
+
     .sticky-header {
         padding: 4rem 20px;
     }
@@ -573,6 +595,11 @@ footer {
     .stylebox:nth-child(1) {
         position: fixed;
         width: 20%;
+    }
+
+    .stylebox ul {
+        position: relative;
+        transform: translateY(3px);
     }
 
     .presentation {
