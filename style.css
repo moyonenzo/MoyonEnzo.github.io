@@ -660,6 +660,17 @@ footer {
         gap: 50px;
     }
 
+    .card {
+        transform: scale(1.5);
+    }
+
+    .card:nth-child(2) {
+        transform: scale(1.5) translateY(250px);
+    }
+
+    .card:nth-child(3) {
+        transform: scale(1.5) translateY(500px);
+    }
 
     .container:nth-child(3) {
         width: 100%;
@@ -707,6 +718,32 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 30px;
         transform: translateX(-12px);
+    }
+
+    .card-skills .card-skills-title h4 {
+        font-size: 2em;
+    }
+
+    .card-skills .card-content .skill {
+        width: 250px;
+        height: 400px;
+    }
+
+    .card-skills .card-content .skill img {
+        width: 150px;
+        height: 150px;
+        margin: 50px 50px;
+    }
+    
+    .card-skills .card-content .skill h4 {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    
+    .card-skills .card-content .skill p {
+        font-size: 1.5em;
+        opacity: .5;
+        text-align: center;
     }
 
     .card-skills .card-content .project {
