@@ -603,7 +603,7 @@ footer {
     }
 
     .container:nth-child(1) {
-        height: 870px;
+        height: 670px;
     }
 
     .sticky-header {
@@ -629,7 +629,7 @@ footer {
     }
 
     .presentation {
-        margin-top: 30em;
+        margin-top: 15em;
         padding: 5em 20px;
         text-align: center;
     }
@@ -678,7 +678,7 @@ footer {
         flex-direction: column;
         gap: 50px;
 
-        transform: translateY(-300px);
+        transform: translateY(-500px);
     }
 
     .card {
@@ -695,6 +695,7 @@ footer {
 
     .container:nth-child(3) {
         width: 100%;
+        transform: translateY(-350px);
     }
 
     .card-skills {
@@ -773,7 +774,7 @@ footer {
     .container:nth-child(4) {
         width: 100%;
         max-height: 1370px;
-        transform: translateY(-200px);
+        transform: translateY(-350px);
     }
 
     .card-projects .card-projects-title {
