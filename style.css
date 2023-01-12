@@ -678,7 +678,7 @@ footer {
         flex-direction: column;
         gap: 50px;
 
-        transform: translateY(-100px);
+        transform: translateY(-300px);
     }
 
     .card {
