@@ -589,6 +589,22 @@ footer {
 }
 
 @media screen and (max-width: 980px) and (max-device-aspect-ratio: 9/16) {
+    .stylebox:nth-child(1) img:hover {
+        transform: scale(1.5);
+    }
+
+    .stylebox ul li:hover {
+        text-decoration: none;
+        transform: translateX(24px) translateY(0px);
+    } 
+
+    .card:hover {
+        transform: scale(1.5);
+        cursor: default;
+    }
+
+
+
     body {
         position: absolute;
         justify-content: center;
