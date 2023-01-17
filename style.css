@@ -79,6 +79,85 @@ body {
     height: 100vh;
 }
 
+#splashscreen {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--bg-color);
+
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    z-index: 10000;
+
+    transition: .5s ease-in-out;
+}
+
+.splashscreen-open {
+    transform: translateY(-100vh);
+    opacity: 1;
+}
+
+#splashscreen h1:hover {
+    color: var(--bg-color);
+    -webkit-text-stroke: 2px var(--font-color);
+}
+
+#splashscreen h1 {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 5em;
+
+    color: var(--font-color);
+
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    animation: clickIndicator ease-in-out 1.5s infinite;
+    animation-fill-mode: forwards;
+
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#splashscreen p {
+    position: absolute;
+
+    left: 50%;
+    top: 55%;
+
+    opacity: .5;
+    font-size: 0.7em;
+
+    color: var(--font-color);
+
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes clickIndicator {
+    0% {
+        font-size: 5em;
+    }
+    15% {
+        font-size: 4.8em;
+        text-shadow: var(--font-color) 1px 0 5px;
+    }
+    30% {
+        font-size: 5em;
+    }
+    100% {
+
+    }
+}
+
 .sticky-header {
     display: flex;
     flex-direction: row;
@@ -102,6 +181,7 @@ body {
 
 .stylebox:nth-child(1) img {
     cursor: pointer;
+    transition: .5s;
 }
 
 .stylebox:nth-child(1) img:hover {
@@ -589,6 +669,11 @@ footer {
 }
 
 @media screen and (max-width: 980px) and (max-device-aspect-ratio: 9/16) {
+
+    #splashscreen {
+        display: none;
+    }
+
     .stylebox:nth-child(1) img:hover {
         transform: scale(1.5);
     }
@@ -927,6 +1012,10 @@ footer {
     .page {
         max-width: 600px;
         position: relative;
+    }
+
+    #splashscreen {
+        display: none;
     }
 
     .container:nth-child(1) {

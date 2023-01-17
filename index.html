@@ -6,8 +6,21 @@
     </head>
 
     <body>
+
+        <script>
+            function openSite() {
+                document.getElementById("splashscreen").className = "splashscreen-open"
+            }
+        </script>
+
         <div class="page">
             <div class="container" id="container1">
+
+                <div id="splashscreen">
+                    <a href="#container1" onclick="openSite()"><h1>MOYON ENZO</h1></a>
+                    <p>CLIQUEZ POUR ACCEDER</p>
+                </div>
+
                 <header class="sticky-header">
                     <div class="stylebox">
                         <a href="#container1"><img src="../public/images/memoji_icon.png" alt="MOYON Enzo MEMOJI"/></a>
